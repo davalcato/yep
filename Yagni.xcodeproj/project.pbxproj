@@ -14,6 +14,8 @@
 		751C9F201FA67AB500D169E6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 751C9F1E1FA67AB500D169E6 /* LaunchScreen.storyboard */; };
 		751C9F2B1FA67AB500D169E6 /* YagniTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 751C9F2A1FA67AB500D169E6 /* YagniTests.swift */; };
 		751C9F361FA67AB500D169E6 /* YagniUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 751C9F351FA67AB500D169E6 /* YagniUITests.swift */; };
+		756437C21FABE42300E9E87B /* CategoryCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 756437C11FABE42300E9E87B /* CategoryCell.swift */; };
+		75B28B401FAD19C800BE58C4 /* Models.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75B28B3F1FAD19C800BE58C4 /* Models.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +49,9 @@
 		751C9F311FA67AB500D169E6 /* YagniUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = YagniUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		751C9F351FA67AB500D169E6 /* YagniUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YagniUITests.swift; sourceTree = "<group>"; };
 		751C9F371FA67AB500D169E6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		756437C11FABE42300E9E87B /* CategoryCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryCell.swift; sourceTree = "<group>"; };
+		75866AE21FFB101F00D94102 /* Yagni.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Yagni.entitlements; sourceTree = "<group>"; };
+		75B28B3F1FAD19C800BE58C4 /* Models.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Models.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -81,6 +86,7 @@
 				751C9F291FA67AB500D169E6 /* YagniTests */,
 				751C9F341FA67AB500D169E6 /* YagniUITests */,
 				751C9F131FA67AB500D169E6 /* Products */,
+				75866AE31FFB101F00D94102 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -97,8 +103,11 @@
 		751C9F141FA67AB500D169E6 /* Yagni */ = {
 			isa = PBXGroup;
 			children = (
+				75866AE21FFB101F00D94102 /* Yagni.entitlements */,
 				751C9F151FA67AB500D169E6 /* AppDelegate.swift */,
 				751C9F171FA67AB500D169E6 /* ViewController.swift */,
+				756437C11FABE42300E9E87B /* CategoryCell.swift */,
+				75B28B3F1FAD19C800BE58C4 /* Models.swift */,
 				751C9F191FA67AB500D169E6 /* Main.storyboard */,
 				751C9F1C1FA67AB500D169E6 /* Assets.xcassets */,
 				751C9F1E1FA67AB500D169E6 /* LaunchScreen.storyboard */,
@@ -123,6 +132,13 @@
 				751C9F371FA67AB500D169E6 /* Info.plist */,
 			);
 			path = YagniUITests;
+			sourceTree = "<group>";
+		};
+		75866AE31FFB101F00D94102 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -194,6 +210,11 @@
 					751C9F111FA67AB500D169E6 = {
 						CreatedOnToolsVersion = 9.0;
 						ProvisioningStyle = Automatic;
+						SystemCapabilities = {
+							com.apple.HomeKit = {
+								enabled = 0;
+							};
+						};
 					};
 					751C9F251FA67AB500D169E6 = {
 						CreatedOnToolsVersion = 9.0;
@@ -261,6 +282,8 @@
 			files = (
 				751C9F181FA67AB500D169E6 /* ViewController.swift in Sources */,
 				751C9F161FA67AB500D169E6 /* AppDelegate.swift in Sources */,
+				756437C21FABE42300E9E87B /* CategoryCell.swift in Sources */,
+				75B28B401FAD19C800BE58C4 /* Models.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -429,6 +452,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = QFQW29JWKY;
 				INFOPLIST_FILE = Yagni/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.catosoftware.Yagni;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -444,6 +468,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = QFQW29JWKY;
 				INFOPLIST_FILE = Yagni/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.catosoftware.Yagni;
 				PRODUCT_NAME = "$(TARGET_NAME)";

@@ -1,0 +1,8 @@
+version: "Apple Swift version 4.0.3 (swiftlang-900.0.72 clang-900.0.38)"
+options: "5c68f30a2e6561b68ad3765190369a5d"
+build_time: [1520114737, 494291000]
+inputs:
+  "/Users/davalcato/Desktop/iOS/Yagni/Yagni/ViewController.swift": [1509928751, 0]
+  "/Users/davalcato/Desktop/iOS/Yagni/Yagni/AppDelegate.swift": [1509414156, 0]
+  "/Users/davalcato/Desktop/iOS/Yagni/Yagni/CategoryCell.swift": [1509924451, 0]
+  "/Users/davalcato/Desktop/iOS/Yagni/Yagni/Models.swift": [1513473319, 0]
